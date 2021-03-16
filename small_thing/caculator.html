@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="js/vue.js"></script>
+  <style>
+    .operator{
+      margin-bottom: 10px;
+    }
+    td{
+      width: 30px;
+      height: 30px;
+      border: 1px solid red;
+      text-align: center;
+    }
+    td.blank{
+      border: none
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <div class="operator">
+      <input type="number" v-model.number="num">
+      <button @click="start">开始</button>
+    </div>
+    <table>
+      <tr v-for="(item, i) in grid">
+        <td v-for="(cell, j) in item" @click="clear">{{cell.index}}</td>
+      </tr>
+    </table>
+  </div>
+  <script>
+    // 使用vue编写一个点击数字计时小游戏,列入你在文本框中输入3,点击开始会生成一个3行3列的表格,表格数据为1-9随机排列,这时候从1开始点击,按顺序点到9,当按正确顺序点击完毕,会提示所用的时间,如果顺序没有按对,会提示游戏结束. 
+    new Vue({
+      el: '#app',
+      data: {
+        num: 3,
+        grid: [],
+        clicked_items: []
+      },
+      computed: {
+        
+      },
+      methods: {
+        start(){
+          let grid = this.make2Arr(this.num, this.num)
+          for(let i = 0; i < this.num; i ++){
+            for(let j = 0; j < this.num; j ++){
+              grid[i][j] = {
+                index: i * this.num + j,
+                is_clicked: false,
+                is_wrong: false
+              }
+            }
+          }
+          this.grid = grid;
+        },
+        clear(){
+
+        },
+        make2Arr(cols, rows){
+          let arr = new Array(this.num);
+          for(let i = 0; i < arr.length; i ++){
+              arr[i] = new Array(this.num);
+          }
+          return arr;
+        }
+      }
+    })
+  </script>
+</body>
+</html>
