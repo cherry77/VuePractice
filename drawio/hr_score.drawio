@@ -1,0 +1,92 @@
+<mxfile host="app.diagrams.net" modified="2021-03-03T01:08:19.813Z" agent="5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4427.5 Safari/537.36" etag="WP14cdtuWZuZ2b6mxwx3" version="13.7.9" type="github">
+  <diagram id="oEETys66kWscUehuKClO" name="Page-1">
+    <mxGraphModel dx="1773" dy="543" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="hMYv4uFyoFBAjx3cWcxC-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="hMYv4uFyoFBAjx3cWcxC-1" target="hMYv4uFyoFBAjx3cWcxC-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hMYv4uFyoFBAjx3cWcxC-1" value="所有在职的hr" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hMYv4uFyoFBAjx3cWcxC-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="hMYv4uFyoFBAjx3cWcxC-2" target="hMYv4uFyoFBAjx3cWcxC-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hMYv4uFyoFBAjx3cWcxC-2" value="获取hr上一个月招聘入职的employee" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="230" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hMYv4uFyoFBAjx3cWcxC-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="hMYv4uFyoFBAjx3cWcxC-4" target="hMYv4uFyoFBAjx3cWcxC-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hMYv4uFyoFBAjx3cWcxC-4" value="根据employee岗位和入职留存时间计算积分" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="420" y="50" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hMYv4uFyoFBAjx3cWcxC-6" value="计算奖金" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="600" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hMYv4uFyoFBAjx3cWcxC-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="hMYv4uFyoFBAjx3cWcxC-8" target="hMYv4uFyoFBAjx3cWcxC-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hMYv4uFyoFBAjx3cWcxC-8" value="入职分" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-30" y="175" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hMYv4uFyoFBAjx3cWcxC-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="hMYv4uFyoFBAjx3cWcxC-9" target="hMYv4uFyoFBAjx3cWcxC-11" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="440" y="205" />
+              <mxPoint x="440" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hMYv4uFyoFBAjx3cWcxC-9" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;color: rgb(69 , 69 , 69) ; font-family: &amp;#34;.pingfang sc&amp;#34;&quot;&gt;&amp;nbsp;获取employee&lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;s1&quot; style=&quot;color: rgb(69 , 69 , 69) ; font-stretch: normal ; line-height: normal ; font-family: &amp;#34;.pingfang sc&amp;#34;&quot;&gt;条件：上个月&lt;/span&gt;&lt;span style=&quot;color: rgb(69 , 69 , 69) ; font-family: &amp;#34;helvetica neue&amp;#34;&quot;&gt;26&lt;/span&gt;&lt;span class=&quot;s1&quot; style=&quot;color: rgb(69 , 69 , 69) ; font-stretch: normal ; line-height: normal ; font-family: &amp;#34;.pingfang sc&amp;#34;&quot;&gt;日&lt;/span&gt;&lt;span style=&quot;color: rgb(69 , 69 , 69) ; font-family: &amp;#34;helvetica neue&amp;#34;&quot;&gt;0:00:00-10.days &amp;lt; &lt;b&gt;入职时间&lt;/b&gt; &amp;lt;=&amp;nbsp;&lt;/span&gt;&lt;span class=&quot;s1&quot; style=&quot;color: rgb(69 , 69 , 69) ; font-stretch: normal ; line-height: normal ; font-family: &amp;#34;.pingfang sc&amp;#34;&quot;&gt;下个月的&lt;/span&gt;&lt;span style=&quot;color: rgb(69 , 69 , 69) ; font-family: &amp;#34;helvetica neue&amp;#34;&quot;&gt;25&lt;/span&gt;&lt;span class=&quot;s1&quot; style=&quot;color: rgb(69 , 69 , 69) ; font-stretch: normal ; line-height: normal ; font-family: &amp;#34;.pingfang sc&amp;#34;&quot;&gt;日&lt;/span&gt;&lt;span style=&quot;color: rgb(69 , 69 , 69) ; font-family: &amp;#34;helvetica neue&amp;#34;&quot;&gt;23:59:59 - 10 +1&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="175" y="175" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PxYnb-G8K_FJn_7P4R8V-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hMYv4uFyoFBAjx3cWcxC-11" target="PxYnb-G8K_FJn_7P4R8V-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PxYnb-G8K_FJn_7P4R8V-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PxYnb-G8K_FJn_7P4R8V-3" target="hMYv4uFyoFBAjx3cWcxC-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hMYv4uFyoFBAjx3cWcxC-11" value="计算积分：根据岗位规则计算" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="480" y="230" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hMYv4uFyoFBAjx3cWcxC-13" value="根据积分计算奖金" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="760" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hMYv4uFyoFBAjx3cWcxC-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="hMYv4uFyoFBAjx3cWcxC-15" target="hMYv4uFyoFBAjx3cWcxC-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hMYv4uFyoFBAjx3cWcxC-15" value="转正分" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-30" y="285" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hMYv4uFyoFBAjx3cWcxC-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="hMYv4uFyoFBAjx3cWcxC-16" target="hMYv4uFyoFBAjx3cWcxC-11" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="440" y="320" />
+              <mxPoint x="440" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hMYv4uFyoFBAjx3cWcxC-16" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;color: rgb(69 , 69 , 69) ; font-family: &amp;#34;.pingfang sc&amp;#34;&quot;&gt;&amp;nbsp; 获取employee:&lt;/span&gt;&lt;/div&gt;&lt;span class=&quot;s1&quot; style=&quot;color: rgb(69 , 69 , 69) ; font-stretch: normal ; line-height: normal ; font-family: &amp;#34;.pingfang sc&amp;#34;&quot;&gt;条件：上个月&lt;/span&gt;&lt;span style=&quot;color: rgb(69 , 69 , 69) ; font-family: &amp;#34;helvetica neue&amp;#34;&quot;&gt;26&lt;/span&gt;&lt;span class=&quot;s1&quot; style=&quot;color: rgb(69 , 69 , 69) ; font-stretch: normal ; line-height: normal ; font-family: &amp;#34;.pingfang sc&amp;#34;&quot;&gt;日&lt;/span&gt;&lt;span style=&quot;color: rgb(69 , 69 , 69) ; font-family: &amp;#34;helvetica neue&amp;#34;&quot;&gt;0:00:00&lt;/span&gt;&amp;lt;= &lt;b&gt;转正时间&lt;/b&gt; &amp;lt;=&lt;span class=&quot;s1&quot; style=&quot;color: rgb(69 , 69 , 69) ; font-stretch: normal ; line-height: normal ; font-family: &amp;#34;.pingfang sc&amp;#34;&quot;&gt;下个月的&lt;/span&gt;&lt;span style=&quot;color: rgb(69 , 69 , 69) ; font-family: &amp;#34;helvetica neue&amp;#34;&quot;&gt;25&lt;/span&gt;&lt;span class=&quot;s1&quot; style=&quot;color: rgb(69 , 69 , 69) ; font-stretch: normal ; line-height: normal ; font-family: &amp;#34;.pingfang sc&amp;#34;&quot;&gt;日&lt;/span&gt;&lt;span style=&quot;color: rgb(69 , 69 , 69) ; font-family: &amp;#34;helvetica neue&amp;#34;&quot;&gt;23:59:59&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="175" y="285" width="225" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PxYnb-G8K_FJn_7P4R8V-6" value="调用Auth员工列表接口" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="180" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="PxYnb-G8K_FJn_7P4R8V-7" value="调用Auth员工列表接口" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="285" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="PxYnb-G8K_FJn_7P4R8V-3" value="&lt;span&gt;获取employee关联简历招聘任务的招聘责任人&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="610" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PxYnb-G8K_FJn_7P4R8V-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hMYv4uFyoFBAjx3cWcxC-11" target="PxYnb-G8K_FJn_7P4R8V-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="580" y="260" as="sourcePoint" />
+            <mxPoint x="790" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
