@@ -29,7 +29,7 @@
     </div>
     <table>
       <tr v-for="(item, i) in grid">
-        <td v-for="(cell, j) in item" @click="clear">{{cell.index}}</td>
+        <td v-for="(cell, j) in item" @click="clickCell(cell)">{{cell.index}}</td>
       </tr>
     </table>
   </div>
@@ -40,7 +40,8 @@
       data: {
         num: 3,
         grid: [],
-        clicked_items: []
+        clicked_items: [],
+        hasNumIndexArr: []
       },
       computed: {
         
@@ -53,13 +54,26 @@
               grid[i][j] = {
                 index: i * this.num + j,
                 is_clicked: false,
-                is_wrong: false
+                is_wrong: false,
+                num: ''
               }
+            }
+          }
+          let tmp = []
+          for(let i = 0; i < 9; i++){
+            let x = this.getRndInteger(0, this.num - 1)
+            let y = this.getRndInteger(0, this.num - 1)
+            let index = x * this.num + y
+            if(tmp.indexOf(index) === -1){
+              tmp.push(index)
+              grid[x][y].num = i
+            }else{
+              i --
             }
           }
           this.grid = grid;
         },
-        clear(){
+        clickCell(cell){
 
         },
         make2Arr(cols, rows){
@@ -68,6 +82,10 @@
               arr[i] = new Array(this.num);
           }
           return arr;
+        },
+        // 获取min-max随机整数值
+        getRndInteger(min, max) {
+          return Math.floor(Math.random() * (max - min + 1) ) + min;
         }
       }
     })
